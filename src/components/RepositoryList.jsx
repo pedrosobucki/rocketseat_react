@@ -1,9 +1,10 @@
 import { RepositoryItem } from "./RepositoryItem"
+import '../styles/repositories.scss'
 
 const repository = {
-    name: 'Unset',
+    name: 'Unform',
     description: 'Forms in React',
-    link: 'https://github.com/pedrosobucki/rocketseat_react'
+    link: 'https://github.com/unform/unform'
 }
 
 export function RepositoryList(){

@@ -1,35 +1,22 @@
-const repositoryName = 'unset'
+import { RepositoryItem } from "./RepositoryItem"
+
+const repository = {
+    name: 'Unset',
+    description: 'Forms in React',
+    link: 'https://github.com/pedrosobucki/rocketseat_react'
+}
 
 export function RepositoryList(){
-    return <section className="repository-list">
+    return (<section className="repository-list">
 
         <h1>Repository List</h1>
 
         <ul>
-            <li>
-                <strong>{repositoryName}</strong>
-                <p>Forms in React</p>
-                <a href="#">
-                    access repository
-                </a>
-            </li>
-
-            <li>
-                <strong>{repositoryName}</strong>
-                <p>Forms in React</p>
-                <a href="#">
-                    access repository
-                </a>
-            </li>
-
-            <li>
-                <strong>{repositoryName}</strong>
-                <p>Forms in React</p>
-                <a href="#">
-                    access repository
-                </a>
-            </li>
+            <RepositoryItem repository={repository}/>
+            <RepositoryItem />
+            <RepositoryItem />
+            <RepositoryItem />
         </ul>
 
-    </section>
+    </section>)
 }
